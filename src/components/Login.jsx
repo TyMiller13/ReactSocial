@@ -17,7 +17,9 @@ export default function Login(props) {
         myHeaders.append('Authorization', `Basic ${btoa(stringToEncode)}`)
 
         let response = await fetch("https://responsible-knowledgeable-restaurant.glitch.me/auth/token", {
-            headers: myHeaders
+            headers: myHeaders,
+            method: 'POST',
+            redirect: 'follow'
         })
 
         if (response.ok){

@@ -7,7 +7,7 @@ export default function PostCard({post}) {
         <div className="card-body">
             <h5 className="card-title">{post.title}</h5>
             <p className="card-text">{post.body}</p>
-            <Link className='btn btn-primary' to='/'>See More</Link>
+            <Link className='btn btn-primary' to='/PostCard'>See More</Link>
         </div>
     </div>
   )

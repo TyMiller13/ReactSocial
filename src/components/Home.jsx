@@ -12,7 +12,7 @@ export default function Home() {
     },[])
  return (
     <>
-        <h1 className='text-center'>Welcome to ReactSpace!</h1>
+        <h1 className='text-center my-4'>Welcome to ReactSpace!</h1>
         {posts.map(post => <PostCard key={post.id} post={post}/>)}
     </>
   )

@@ -5,6 +5,7 @@ import CreatePost from "./components/CreatePost";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
+import PostCard from "./components/PostCard";
 import SignUp from "./components/SignUp";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
                 <Route path='/signup' element={<SignUp flashMessage={flashMessage} />} />
                 <Route path='/login' element={<Login flashMessage={flashMessage} logUserIn={logUserIn} />} />
                 <Route path='/create' element={<CreatePost loggedIn={loggedIn} flashMessage={flashMessage} />}/>
+                <Route path='/post' element={<PostCard loggedIn={loggedIn}/>} />
             </Routes>
         </div>
     </>
